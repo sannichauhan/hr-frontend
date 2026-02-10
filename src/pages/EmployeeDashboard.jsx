@@ -29,11 +29,11 @@ export default function EmployeeDashboard() {
       ]);
 
       const presentToday = todayAttendance.filter(
-        (a) => a.status === "Present"
+        (a) => a.status === "P"
       ).length;
 
       const absentToday = todayAttendance.filter(
-        (a) => a.status === "Absent"
+        (a) => a.status === "A"
       ).length;
 
       setStats({
